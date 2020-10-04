@@ -11,21 +11,11 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    SizedBox(width: 140,),
-                    Text("Step 3/5",style: TextStyle(fontFamily: 'acaslonItalic', fontSize: 30),),
-                    SizedBox(width: 100,),
-                    Align(alignment: Alignment.bottomRight,child: Icon(Icons.close)),
-                  ],
-                ),
-                SizedBox(height: 20,),
-                Text("SIZE REVIEW", style: TextStyle(color: Colors.grey, fontSize: 15),),
-                SizedBox(height: 25,),
-                Text("WHAT'S YOUR TYPICAL SIZE?", style: TextStyle(fontSize: 15),),
-                SizedBox(height: 15,),
+            child: Transform (Row(children: [
+                  SizedBox(width: 60,),
+                  Text("JEANS/PANT SIZE:"),
+                  SizedBox(width: 10,),
+                  DropdownButton<String>(
                 Row(children: [
                   SizedBox(width: 100,),
                   Text("BRA SIZE:"),
