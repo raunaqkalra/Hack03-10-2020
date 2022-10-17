@@ -91,6 +91,7 @@ class MyApp extends StatelessWidget {
                 SizedBox(height: 10,),
                 Text("FOR TOPS"),
                 Row(children: [
+                  //code optimisation
                   SizedBox(width: 100,),
                   Text("BRAND NAME:"),
                   SizedBox(width: 10,),
